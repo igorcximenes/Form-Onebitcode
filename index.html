@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms | Cadastro da liga dos Astronautas</title>
+  </head>
+  <body>
+    <h1>Cadastro da liga dos Astronautas</h1>
+    <small> <span style="color: red">*</span> required</small>
+    <br />
+    <br />
+    <form action="">
+      <div>
+        <label for="name"
+          ><strong>Nome:<span style="color: red">*</span></strong></label
+        >
+        <input type="text" name="name" id="name" />
+      </div>
+      <br />
+      <div>
+        <label for="email"
+          ><strong>Email:</strong><span style="color: red">*</span></label
+        >
+        <input type="email" id="email" name="email" /> -
+        <label for="password"
+          ><strong>Password:<span style="color: red">*</span></strong></label
+        >
+        <input type="password" id="password" name="password" />
+      </div>
+      <br />
+      <hr />
+      <div>
+        <label for="date"
+          ><strong>Data de Nascimento:</strong
+          ><span style="color: red">*</span></label
+        >
+        <input type="date" name="date" /> -
+        <label for="file"
+          ><strong>Foto:</strong><span style="color: red">*</span></label
+        >
+        <input type="file" name="file" id="file" />
+      </div>
+      <br />
+      <div>
+        <label for="natinality"
+          ><strong
+            >Nacionalidade:<span style="color: red">*</span></strong
+          ></label
+        >
+        <select name="Nacionalidade" id="Nacionalidade">
+          <option value="Selecione">Selecione</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Russo">Russo</option>
+          <option value="Americano">Americano</option>
+        </select>
+        -
+        <label for="gender"
+          ><strong>Gênero:</strong><span style="color: red">*</span></label
+        >
+        <input type="radio" name="gender" id="female" value="Feminino" />
+        <label for="gender">Feminino</label>
+        <input type="radio" name="gender" id="male" value="Masculino" />
+        <label for="male">Masculino</label>
+        <input
+          type="radio"
+          name="gender"
+          id="none"
+          value="Prefiro não informar"
+        />
+        <label for="none">Prefiro não informar</label>
+      </div>
+      <br />
+      <hr />
+      <div>
+        <h4>Suas principais qualidade:<span style="color: red">*</span></h4>
+        <label for="int">Inteligência:</label>
+        <input type="checkbox" name="atributes" id="int" /> |
+        <label for="res">Resiliencia:</label>
+        <input type="checkbox" name="atributes" id="res" /> |
+        <label for="pref">Preparo Físico:</label>
+        <input type="checkbox" name="atributes" id="pref" /> |
+        <label for="ed">Educação:</label>
+        <input type="checkbox" name="atributes" id="ed" />
+      </div>
+      <br />
+      <br />
+      <div>
+        <textarea
+          name="text"
+          id="textarea"
+          cols="60"
+          rows="10"
+          placeholder="Porque você gostaria de ser um astronauta?"
+        ></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Enviar" />
+      </div>
+    </form>
+  </body>
+</html>
